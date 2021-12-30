@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Promedio, mediana y moda</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/lucila-willington/" class="linkedin">@lucila-willington</a>
+            </li>
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./descuentos.html">Porcentajes y descuentos</a>
+            </li>
+            <li>
+                <a href="./figuras.html">Figuras geométricas</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Promedio, mediana y moda</h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <form action="">
+                    <label for="input">Ingresa tus datos separados por coma:</label>
+                    <input type="text" id="input" placeholder="Ejemplo: 1, 2, 3, ...">
+                    <button type="button" onclick="mediaAritmetica()">Calcular promedio</button>
+                    <button type="button" onclick="mediana()">Calcular mediana</button>
+                    <button type="button" onclick="moda()">Calcular moda</button>
+                    <p id="resultadoPromedio"></p>
+                    <p id="resultadoMediana"></p>
+                    <p id="resultadoModa"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="promedioMedianaModa.js"></script>
+</body>
+
+</html>

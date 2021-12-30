@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Porcentajes y descuentos</title>
+</head>
+
+<body>
+    <nav>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/lucila-willington/" class="linkedin">@lucila-willington</a>
+                </li>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./figuras.html">Figuras geométricas</a>
+                </li>
+                <li>
+                    <a href="./promedioMedianaModa.html">Promedio, mediana y moda</a>
+                </li>
+            </ul>
+    </nav>
+    <h1>Porcentajes y descuentos</h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h2 class="h2">Calcula el precio a pagar de tus productos con descuento</h2>
+                <form action="">
+                    <label for="inputPrice">Precio del producto:</label>
+                    <input type="number" id="inputPrice">
+                    <label for="inputDiscount"> Descuento del producto:</label>
+                    <input type="number" id="inputDiscount">
+                    <button type="button" onclick="priceDescount()">Calcular precio con descuento</button>
+                    <p id="resultPrice"></p>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h2 class="h2">Cupón</h2>
+                <form action="">
+                    <label for="inputCupon">Ingresar código de cupón:</label>
+                    <input type="text" id="inputCupon">
+                    <button type="button" onclick="priceDescount()">Calcular precio con cupón</button>
+                    <p id="resultCupon"></p>
+                </form>
+            </div>
+            <div class="">
+                <div class="card">
+                    <p>Cupones:</p>
+                    <p>descuento15</p>
+                    <p>descuento25</p>
+                    <p>descuento30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="descuentos.js"></script>
+</body>
+
+</html>
