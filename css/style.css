@@ -77,6 +77,21 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
+.nav li a {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover>ul {
+    display: block;
+}
 @media (max-width: 800px) {
     .row {
         gap: 20px;
